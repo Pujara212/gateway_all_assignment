@@ -1,0 +1,257 @@
+body,ul,li{
+
+	padding: 0;
+	margin: 0;
+	
+}
+
+.d{
+
+  position: fixed;
+  z-index: 1;
+}
+.logo
+{
+float: left;
+width: 20%;
+padding: 5px;
+
+}
+
+.menu {
+
+float: right;
+width: 60%;
+}
+.main{
+	width: 100%;
+	float: left;
+
+}
+.center{
+
+	width: 1170px;
+	margin: 0 auto;
+
+}
+
+.menu ul li{
+
+	float: left;
+	list-style: none;
+
+	padding: 20px 0px;
+     
+}
+.menu ul li a{
+	border-right: 2px solid black;
+	padding: 0px 20px;
+	font-weight: bold;
+ 	list-style: none;
+	text-decoration: none;
+	color: black;
+}
+
+.txt{
+
+text-align: center;
+text-transform: capitalize;
+
+
+}
+.b{
+
+	border:2px dotted white ;
+}
+.services{
+float: left;
+width: 33.33%;
+
+}
+.sh h1{
+
+text-align: center;
+text-transform: capitalize;
+font-family: verdana;
+font-size: 30px;
+font-weight: bold;
+}
+
+.services img{
+
+	width: 80%;
+	border: 3px solid black;
+	margin: 5px;
+	height: 300px;
+	border-radius: 15px;
+}
+.cl
+{
+	float: left;
+	width: 15%;
+	margin: 5px;
+}
+.cl img{
+	 
+	width: 100%; 
+    
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 150px;
+
+
+}
+.clh h1{
+
+	text-transform: capitalize;
+	text-align: center;
+
+	font-size: 30px;
+	font-weight: bold;
+}
+.ft{
+	border: 3px solid black;
+	background-color: #2BD291;;
+	width: 39%;
+	float: left;
+	height: 180px;
+ }
+.ft a{
+
+list-style: none;
+text-decoration: none;
+ 
+}
+.ftr{
+	border: 3px solid black;
+	background-color: #2BD291;;
+	width: 59%;
+	float: right;
+	height: 180px;
+	
+}
+.fth h1{
+
+	text-transform: capitalize;
+	text-align: center;
+
+	font-size: 30px;
+	font-weight: bold;
+
+
+}
+
+.poster{
+
+width: 100%;
+float: left;
+
+}
+.poster img{
+    width: 100%; 
+    height: 350px;
+    border: 1px solid black;
+    border-image-outset: 10px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+.posr{
+	 margin-top: 30px;
+
+	
+}
+
+.posa{
+position: absolute;
+top: 250px;
+
+}
+.posa input{
+background-color: lightblue;
+font-weight: bold;
+font-size: 20px;
+border-radius: 15px;
+border-width: all;
+
+
+}
+.posa button{
+	top: 10px;
+}
+.posa p{
+
+text-align: left;
+text-align-last: left;
+
+}
+
+
+img.zoom {
+    width: 350px;
+    height: 200px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.sk{
+float: left;
+width: 365px;
+height: 165px;
+text-transform: capitalize;
+text-align: center;
+border-right: 3px solid orange;
+padding-top: 35px;
+margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 70px;
+}
+
+ 
