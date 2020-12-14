@@ -1,0 +1,12 @@
+2020-12-13 10:51:16,880 [10] DEBUG Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Debug Level incorrect Information In Login
+2020-12-13 10:51:16,915 [10] INFO  Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Info Level incorrect Information In Login
+2020-12-13 10:51:16,916 [10] WARN  Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Warn Level incorrect Information In Login
+2020-12-13 10:51:27,487 [10] DEBUG Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Debug Level Login Controller
+2020-12-13 10:51:27,488 [10] INFO  Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Info Level Login Controller
+2020-12-13 10:51:27,490 [10] WARN  Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Warn Level Login Controller
+2020-12-13 10:51:27,522 [10] DEBUG Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Debug Level
+2020-12-13 10:51:27,523 [10] INFO  Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Info Level
+2020-12-13 10:51:27,523 [10] WARN  Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Warn Level
+2020-12-13 10:51:33,473 [11] DEBUG Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Debug Level For Logout
+2020-12-13 10:51:33,474 [11] INFO  Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Info Level For Logout
+2020-12-13 10:51:33,475 [11] WARN  Source_Control_Final.Controllers.HomeController [(null)] - Hi I am log4net Warn Level  For Logout
