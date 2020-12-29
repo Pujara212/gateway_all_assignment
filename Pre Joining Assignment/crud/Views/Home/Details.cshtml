@@ -1,0 +1,171 @@
+﻿@model crud.Models.product
+
+@{
+    ViewBag.Title = "Details";
+}
+ 
+<!doctype html>
+<html lang="en">
+<head>
+    <title>ASSIGNMENT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <style type="text/css">
+        .l {
+            float: left;
+            width: 50%;
+        }
+
+        .r {
+            float: right;
+            width: 20%;
+        }
+
+          </style>
+
+</head>
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle Menu</span>
+                </button>
+            </div>
+            <h1><a href="index.html" class="logo">PRODUCT MANAGMENT</a></h1>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    @Html.ActionLink("Product List", "Index", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Add Product", "Create", "Home")
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5 pt-5">
+
+
+<div class="l"> 
+            <h1>Welcome @Session["Username"]</h1>
+    </div>
+
+
+
+            <div class="r"> 
+
+            <h4>@Html.ActionLink("Logout", "Logout", "User")</h4>
+                </div>
+
+
+            <div style="margin-top:100px;">
+                <h4>product</h4>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Product_id)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Product_id)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Product_name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Product_name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Product_Category)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Product_Category)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Product_Price)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Product_Price)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Product_Quantity)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Product_Quantity)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Short_Description)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Short_Description)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Long_Description)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Long_Description)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Small_Image_path)
+                    </dt>
+
+                    <dd>
+                        <img src="@Url.Content(Session["image1"].ToString())" height="150" width="150" />
+
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Large_Image_path)
+                    </dt>
+
+                    <dd>
+                        <img src="@Url.Content(Session["image2"].ToString())" height="150" width="150" />
+
+                    </dd>
+
+                </dl>
+            </div>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.Product_id }) |
+                @Html.ActionLink("Product List", "Index")
+            </p>
+
+
+
+
+
+
+        </div>
+
+        <script src="~/js/jquery.min.js"></script>
+        <script src="~/js/popper.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/main.js"></script>
+</body>
+</html>
+
+
+
+ 

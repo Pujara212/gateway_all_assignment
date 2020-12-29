@@ -1,0 +1,45 @@
+2020-12-26 15:41:13,804 [5] DEBUG crud.Controllers.LoginController [(null)] - Hi I am log4net Debug Level logincontroller index
+2020-12-26 15:41:13,844 [5] INFO  crud.Controllers.LoginController [(null)] - Hi I am log4net Info Level  logincontroller index
+2020-12-26 15:41:13,845 [5] WARN  crud.Controllers.LoginController [(null)] - Hi I am log4net Warn Level  logincontroller index
+2020-12-26 15:41:59,465 [5] DEBUG crud.Controllers.HomeController [(null)] - Hi I am log4net Debug Level in Index Controller try block
+2020-12-26 15:41:59,466 [5] INFO  crud.Controllers.HomeController [(null)] - Hi I am log4net Info Level in Index Controller try block
+2020-12-26 15:41:59,468 [5] WARN  crud.Controllers.HomeController [(null)] - Hi I am log4net Warn Level in Index Controller try block
+2020-12-26 15:42:13,591 [6] DEBUG crud.Controllers.HomeController [(null)] - Hi I am log4net Debug Level in Index Controller try block
+2020-12-26 15:42:13,593 [6] INFO  crud.Controllers.HomeController [(null)] - Hi I am log4net Info Level in Index Controller try block
+2020-12-26 15:42:13,594 [6] WARN  crud.Controllers.HomeController [(null)] - Hi I am log4net Warn Level in Index Controller try block
+2020-12-26 15:42:21,461 [6] DEBUG crud.Controllers.HomeController [(null)] - Hi I am log4net Debug Level in Create Controller try block Get
+2020-12-26 15:42:21,463 [6] INFO  crud.Controllers.HomeController [(null)] - Hi I am log4net Info Level  in Create Controller try block Get
+2020-12-26 15:42:21,465 [6] WARN  crud.Controllers.HomeController [(null)] - Hi I am log4net Warn Level  in Create Controller try block Get
+2020-12-26 15:42:29,262 [5] DEBUG crud.Controllers.UserController [(null)] - Hi I am log4net Debug Level logout Controller try
+2020-12-26 15:42:29,263 [5] INFO  crud.Controllers.UserController [(null)] - Hi I am log4net Info Level logout Controller try
+2020-12-26 15:42:29,263 [5] WARN  crud.Controllers.UserController [(null)] - Hi I am log4net Warn Level logout Controller try
+2020-12-26 15:42:29,292 [6] DEBUG crud.Controllers.LoginController [(null)] - Hi I am log4net Debug Level logincontroller index
+2020-12-26 15:42:29,293 [6] INFO  crud.Controllers.LoginController [(null)] - Hi I am log4net Info Level  logincontroller index
+2020-12-26 15:42:29,294 [6] WARN  crud.Controllers.LoginController [(null)] - Hi I am log4net Warn Level  logincontroller index
+2020-12-26 16:00:16,133 [5] DEBUG crud.Controllers.LoginController [(null)] - Hi I am log4net Debug Level logincontroller index
+2020-12-26 16:00:16,175 [5] INFO  crud.Controllers.LoginController [(null)] - Hi I am log4net Info Level  logincontroller index
+2020-12-26 16:00:16,176 [5] WARN  crud.Controllers.LoginController [(null)] - Hi I am log4net Warn Level  logincontroller index
+2020-12-26 16:03:31,626 [5] DEBUG crud.Controllers.LoginController [(null)] - Hi I am log4net Debug Level logincontroller index
+2020-12-26 16:03:31,670 [5] INFO  crud.Controllers.LoginController [(null)] - Hi I am log4net Info Level  logincontroller index
+2020-12-26 16:03:31,671 [5] WARN  crud.Controllers.LoginController [(null)] - Hi I am log4net Warn Level  logincontroller index
+2020-12-26 16:06:38,593 [5] DEBUG crud.Controllers.HomeController [(null)] - Hi I am log4net Debug Level in Index Controller try block
+2020-12-26 16:06:38,594 [5] INFO  crud.Controllers.HomeController [(null)] - Hi I am log4net Info Level in Index Controller try block
+2020-12-26 16:06:38,595 [5] WARN  crud.Controllers.HomeController [(null)] - Hi I am log4net Warn Level in Index Controller try block
+2020-12-26 16:06:51,888 [6] DEBUG crud.Controllers.HomeController [(null)] - Hi I am log4net Debug Level in Create Controller try block Get
+2020-12-26 16:06:51,889 [6] INFO  crud.Controllers.HomeController [(null)] - Hi I am log4net Info Level  in Create Controller try block Get
+2020-12-26 16:06:51,890 [6] WARN  crud.Controllers.HomeController [(null)] - Hi I am log4net Warn Level  in Create Controller try block Get
+2020-12-26 16:07:26,716 [10] DEBUG crud.Controllers.LoginController [(null)] - Hi I am log4net Debug Level logincontroller index
+2020-12-26 16:07:26,765 [10] INFO  crud.Controllers.LoginController [(null)] - Hi I am log4net Info Level  logincontroller index
+2020-12-26 16:07:26,766 [10] WARN  crud.Controllers.LoginController [(null)] - Hi I am log4net Warn Level  logincontroller index
+2020-12-26 16:08:26,307 [11] DEBUG crud.Controllers.HomeController [(null)] - Hi I am log4net Debug Level in Create Controller try block Get
+2020-12-26 16:08:26,309 [11] INFO  crud.Controllers.HomeController [(null)] - Hi I am log4net Info Level  in Create Controller try block Get
+2020-12-26 16:08:26,310 [11] WARN  crud.Controllers.HomeController [(null)] - Hi I am log4net Warn Level  in Create Controller try block Get
+2020-12-26 16:08:29,577 [10] DEBUG crud.Controllers.HomeController [(null)] - Hi I am log4net Debug Level in Index Controller try block
+2020-12-26 16:08:29,578 [10] INFO  crud.Controllers.HomeController [(null)] - Hi I am log4net Info Level in Index Controller try block
+2020-12-26 16:08:29,579 [10] WARN  crud.Controllers.HomeController [(null)] - Hi I am log4net Warn Level in Index Controller try block
+2020-12-26 16:08:41,534 [15] DEBUG crud.Controllers.HomeController [(null)] - Hi I am log4net Debug Level in Index Controller try block
+2020-12-26 16:08:41,535 [15] INFO  crud.Controllers.HomeController [(null)] - Hi I am log4net Info Level in Index Controller try block
+2020-12-26 16:08:41,536 [15] WARN  crud.Controllers.HomeController [(null)] - Hi I am log4net Warn Level in Index Controller try block
+2020-12-26 16:08:48,733 [10] DEBUG crud.Controllers.HomeController [(null)] - Hi I am log4net Debug Level in Index Controller try block
+2020-12-26 16:08:48,734 [10] INFO  crud.Controllers.HomeController [(null)] - Hi I am log4net Info Level in Index Controller try block
+2020-12-26 16:08:48,735 [10] WARN  crud.Controllers.HomeController [(null)] - Hi I am log4net Warn Level in Index Controller try block

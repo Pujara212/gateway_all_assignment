@@ -1,0 +1,236 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+
+
+@model IPagedList<crud.Models.product>
+@{
+    ViewBag.Title = "Index";
+}
+
+@Html.Raw(TempData["CreateMessage"])
+@Html.Raw(TempData["UpdateMessage"])
+@Html.Raw(TempData["DeleteMessage"])
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>ASSIGNMENT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <style type="text/css">
+        .l {
+            float: left;
+            width: 50%;
+        }
+
+        .r {
+            float: right;
+            width: 20%;
+        }
+
+        .form-group {
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+    <link href="~/Content/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <script src="~/scripts/jquery.dataTables.min.js"></script>
+    <script src="~/scripts/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#DataTable').DataTable();
+            $('#checkBoxAll').click(function () {
+                if ($(this).is(":checked")) {
+                    $(".chkCheckBoxId").prop("checked", true)
+                }
+                else {
+                    $(".chkCheckBoxId").prop("checked", false)
+                }
+            });
+        });
+
+
+         
+         </script>
+    
+
+
+</head>
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle Menu</span>
+                </button>
+            </div>
+            <h1><a href="index.html" class="logo">PRODUCT MANAGMENT</a></h1>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    @Html.ActionLink("Product List", "Index", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Add Product", "Create", "Home")
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5 pt-5">
+
+
+            <div class="l">
+                     <h1>Welcome @Session["Username"]</h1>
+            </div>
+
+
+            <div class="r">
+
+                <h4>@Html.ActionLink("Logout", "Logout", "User")</h4>
+            </div>
+            <div style="margin-top:100px;">
+                <p>
+                    @using (Html.BeginForm("Index", "Home", FormMethod.Get))
+                    {
+                        <b>Search By:</b> @Html.RadioButton("SearchBy", "Product_name", true) <text> Product Name</text>
+                        @Html.RadioButton("SearchBy", "Product_Category")<text> Product_Category </text><br />
+                        @Html.TextBox("search")<input type="submit" value="Search" />
+                    }
+                </p>
+            </div>
+
+
+            <div style="margin-top:100px;">
+                @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+                {
+                    <button type="submit" value="Delete" class="btn btn-sm btn-danger rounded-0" onclick="return confirm('Are you sure?')"><i class="fa fa-trash-o"></i> Delete Selected Row</button>
+                    <br /><br />
+                    <table id="DataTable" style="width:100%;" class="table table-bordered">
+
+                        <tr>
+                            <th>
+                            Select
+                            </th>
+
+                            <th>
+                                @Html.ActionLink("Product name", "Index", new { sortBy = ViewBag.SortNameParameter, searchBy = Request.QueryString["SearchBy"], search = Request["search"] })
+                            </th>
+                            <th>
+                                @Html.ActionLink("Product Category", "Index", new { sortBy = ViewBag.SortCategoryParamete, searchBy = Request.QueryString["SearchBy"], search = Request["search"] })
+
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.First().Product_Price)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.First().Product_Quantity)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.First().Short_Description)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.First().Long_Description)
+                            </th>
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.First().Small_Image_path)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.First().Large_Image_path)
+                            </th>
+                            <th colspan="3">Action</th>
+                        </tr>
+                        @if (Model.Count() == 0)
+                        {
+                            <tr>
+                                <td colspan="9" style="text-align:center">
+                                    No Rows Match Search Criteria
+                                </td>
+                            </tr>
+                        }
+                        else
+                        {
+
+                            foreach (var item in Model)
+                            {
+                    <tr>
+                        <td>
+                        <input type="checkbox" name="ID" value="@item.Product_id" class="custom-checkbox chkCheckBoxId" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Product_name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Product_Category)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Product_Price)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Product_Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Short_Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Long_Description)
+                        </td>
+                        <td>
+                            <img src="@Url.Content(item.Small_Image_path)" height="80" width="80" />
+                        </td>
+                        <td>
+                            <img src="@Url.Content(item.Large_Image_path)" height="150" width="150" />
+
+                        </td>
+                        <td>
+                            <i class="fa fa-pencil" aria-hidden="true"> @Html.ActionLink("Edit", "Edit", new { id = item.Product_id })</i>
+                        </td>
+                        <td>
+                            <i class="fa fa-info-circle" aria-hidden="true"> @Html.ActionLink("Details", "Details", new { id = item.Product_id })</i>
+                        </td>
+
+                        <td>
+                            <i class="fa fa-trash" aria-hidden="true"> @Html.ActionLink("Delete", "Delete", new { id = item.Product_id })</i>
+                        </td>
+                    </tr>
+
+
+
+                            }
+                        }
+
+                    </table>
+
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page, SearchBy = Request.QueryString["SearchBy"], search = Request.QueryString["search"], sortBy = Request["sortBy"] }),
+
+             new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded, DisplayPageCountAndCurrentLocation = true, DisplayItemSliceAndTotal = true })
+
+                }
+                </div>
+
+
+        </div>
+    </div>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/popper.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/main.js"></script>
+    
+
+</body>
+</html>
+   
+
+
