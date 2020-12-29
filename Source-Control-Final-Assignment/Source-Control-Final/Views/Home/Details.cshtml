@@ -1,0 +1,57 @@
+﻿@model Source_Control_Final.Models.Employee
+@{
+    ViewBag.Title = "Details";
+}
+
+@Html.Raw(TempData["LoginSucess"])
+<h1 style="text-align:right;position:absolute;right:400px;">@Html.ActionLink("Logout", "Logout", "Home")</h1>
+
+
+<h3>
+
+    welcome @Session["Name"]
+</h3>
+
+
+<div style="justify-content:center;display:flex;">
+
+    <img src="@Url.Content((@Session["Image"].ToString()))" width="200px" height="200px" />
+</div>
+
+<fieldset>
+
+    <legend>Details:</legend>
+    <label for="fname">Id:</label>
+    @Session["EmployeeId"]<br><br>
+
+
+    <label for="fname">Name:</label>
+    @Session["Name"]<br><br>
+
+    <label for="Age">Age:</label>
+    @Session["Age"]<br><br>
+
+    <label for="Gender">Gender:</label>
+    @Session["Gender"]<br><br>
+
+    <label for="DOB">Date Of Birth:</label>
+    @Session["DOB"]<br><br>
+
+    <label for="DOB">Contact No:</label>
+    @Session["Contact_no"]<br><br>
+
+    <label for="DOB">Designation:</label>
+    @Session["Designation"]<br><br>
+
+
+    <label for="email">Email:</label>
+    @Session["Email"]<br><br>
+
+    <label for="email">Address:</label>
+    @Session["Address"]<br><br>
+
+
+
+</fieldset>
+
+
